@@ -6,44 +6,6 @@
   #land h1
     font-size: 100px
 
-@keyframes ani
-    from, 60%, 75%, 90%, to
-      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
-    0%
-      opacity: 0
-      transform: translate3d(0, -3000px, 0)
-    60%
-      opacity: 1
-      transform: translate3d(0, 25px, 0)
-    75%
-      transform: translate3d(0, -10px, 0)
-    90%
-      transform: translate3d(0, 5px, 0)
-    to
-      transform: none
-
-.ani
-  animation-name: ani
-
-
-
-.fade-content > *{transition: ease opacity .25s, ease transform .25s;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body
   font-family: Zag Regular
@@ -53,7 +15,6 @@ body
     attachment: fixed
     repeat: no-repeat
     position: center
-
 
 #land
   height: 140vh
@@ -99,22 +60,15 @@ body
     text-decoration: none
     color: #000
 
-
-
-#about img
-  height: auto
-  width: 25%
-  min-width: 150px
-  max-width: 250px
-
-
-
 #content
   //border: grey dashed 10px
   background-color: transparent
 
 #content .container
   height: 100%
+
+#content .row
+  width: 100%
 
 #content .wrapper
   border:
@@ -139,7 +93,6 @@ body
   margin-top: 5vh
   margin-bottom: 1vh
 
-
 #about
     height: auto
     width: 100%
@@ -157,6 +110,12 @@ body
       right: 20px
       top: 15px
       bottom: 10px
+
+#about img
+  height: auto
+  width: 25%
+  min-width: 150px
+  max-width: 250px
 
 #about p
     color: white
@@ -177,11 +136,6 @@ body
   padding-left: 5vh
   margin-bottom: 5vh
 
-
-
-
-
-
 #media
     height: 60vh
     width: 100%
@@ -196,8 +150,6 @@ body
   text-align: center
   margin: auto 0
 
-
-
 #contact
     height: auto
     width: 100%
@@ -209,7 +161,6 @@ body
 #contact .row
   color: #fff
   text-align: center
-
 
 #contact label
     color: white
@@ -224,7 +175,6 @@ body
     bottom: 5vh
     left: auto
     right: auto
-
 
 #contact #name
   order: 1
@@ -245,13 +195,9 @@ body
 #contact #email input
  width: 100%
 
-
-
 #contact #message
   width: 100%
-
   padding: 5px
-
 
 #contact #message textarea
   height: 50vh
@@ -259,7 +205,6 @@ body
 
 #contact #submit
   height: auto
-
 
 #contact #submit input
   padding: 5px
@@ -275,24 +220,15 @@ body
   &:hover
     color: rgba(0, 0, 0, 1)
 
-
-
-
-
-footer
-
 footer h4
   font-size: 16px
   display: inline-block
   margin: 0 10px
 
-
-
 @media (max-width: 425px)
   #content .wrapper
     width: 100%
     margin: 0
-
   #contact #formblock
     display: block
     min-width: 0
@@ -312,8 +248,6 @@ footer h4
     font-size: 70px
   #land h2
     font-size:  20px
-
-
   #about img
     float: none
     margin: 0 auto
