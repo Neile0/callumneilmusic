@@ -1,6 +1,6 @@
 @font-face : {
-  font-family: Zag;
-  src: url("../fonts/zagregular");
+  font-family: Zag, sans-serif;
+  src: url("../fonts/zagregular.otf");
 }
 
 @media (max-width: 768px) {
