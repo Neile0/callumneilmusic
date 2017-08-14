@@ -1,9 +1,11 @@
-h1{
+*h1{
   color: black;
   text-align: center;
+  font-family: Sans-serif;
 }
 
-p{
+*p{
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  font-family: Sans-serif;
 }
