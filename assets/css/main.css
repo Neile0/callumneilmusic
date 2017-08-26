@@ -1,7 +1,7 @@
 @font-face {
   font-family: Zag;
-  src: url("../fonts/zagregular.otf") format('opentype'),
-       url("../fonts/zagregular.ttf") format('truetype');
+  src: url("fonts/zagregular.otf") format('opentype'),
+       url("fonts/zagregular.ttf") format('truetype');
 }
 
 @media (max-width: 768px) {
