@@ -1,5 +1,5 @@
 @font-face : {
-  font-family: Zag, sans-serif;
+  font-family: Zag
   src: url("../fonts/zagregular.otf");
 }
 
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Zag;
+  font-family: Zag, sans-serif;
   background-image: url("../img/1.jpg");
   background-size: cover;
   background-attachment: fixed;
