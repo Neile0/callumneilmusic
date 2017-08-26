@@ -11,7 +11,7 @@
 
 body {
   font-family: Zag, sans-serif;
-  
+  background-image: url("../img/1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
