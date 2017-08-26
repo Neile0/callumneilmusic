@@ -1,6 +1,7 @@
 @font-face : {
   font-family: Zag;
-  src: url("../fonts/zagregular.otf") format('opentype');
+  src: url("../fonts/zagregular.otf") format('opentype'),
+       url("../fonts/zagregular.ttf") format('truetype');
 }
 
 @media (max-width: 768px) {
@@ -10,7 +11,7 @@
 }
 
 body {
-  font-family: Zag, sans-serif;
+  font-family: Zag, Helvetica, Arial, sans-serif;
   background-image: url("../img/1.jpg");
   background-size: cover;
   background-attachment: fixed;
