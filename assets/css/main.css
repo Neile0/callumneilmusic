@@ -1,6 +1,6 @@
 @font-face : {
-  font-family: Zag
-  src: url("../fonts/zagregular.otf");
+  font-family: Zag;
+  src: url("http://www.callumneilmusic.com/assets/fonts/zagregular.otf");
 }
 
 @media (max-width: 768px) {
