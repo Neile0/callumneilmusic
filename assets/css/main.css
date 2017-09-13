@@ -5,9 +5,17 @@
 }
 
 @media (max-width: 768px) {
+  
+  body{
+    background-size: stretch;
+    
+    }
+  
+  
   #land h1 {
     font-size: 100px;
   }
+  
 }
 
 body {
