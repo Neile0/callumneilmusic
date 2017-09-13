@@ -7,7 +7,8 @@
 @media (max-width: 768px) {
   
   body{
-    background-size: stretch;
+    background: url("../img/1.jpg"), center, center, fixed;
+   
     
     }
   
@@ -253,6 +254,12 @@ footer h4 {
 }
 
 @media (max-width: 425px) {
+  
+  body{
+    background: url("../img/1.jpg"), center, center, fixed;
+   
+    
+  }
   #content .wrapper {
     width: 100%;
     margin: 0;
