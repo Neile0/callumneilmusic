@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Website</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="functions.js"></script> <!--- JavaScript --->
+	</head>
+	<body> 
+	
+		<header class="bar">
+			<div class="row">
+				<a class="logo" href="#">Callum Neil</a>
+				<nav>
+					<ul>
+						<a class="scroll" href="#about">About</a>   
+						<a class="scroll" href="#media">Media</a>
+						<a class="scroll" href="#contact">Contact</a>
+					</ul>
+				</nav>
+			</div> 
+		</header>
+
+		<div id="land">
+			<h1><span>Musician Arranger Composer</span><br>Callum Neil</h1>
+			<div class="mouse">
+				<span></span>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div id="about" class="contentsection">
+				<h1>About</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+				<img src="" alt="image of Callum"/>
+			</div>
+		
+			<div id="media" class="contentsection">
+				<h1>Media</h1>
+				<h2>Coming soon</h2>
+			</div>
+			
+			<div id="contact" class="contentsection">
+				<h1>Contact</h1>
+				<div id="formblock">
+				<form action="https://formspree.io/" method="POST">
+				<div id="name" class="col-md-3 col-sm-12">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="Name:">
+				</div>
+				<div id="email" class="col-md-3 col-sm-12">
+				<label for="email">Email Address</label>
+				<input type="text" id="email" name="Email:">
+				</div>
+				<div id="message">
+				<label>Message</label>
+				<textarea id="message" name="Message:"></textarea>
+				</div>
+				<div id="submit">
+				<input type="submit" value="submit">
+				</div>
+				</form>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<h4>&copy; 2017 Callum Neil. All Rights Reserved</h4>
+			<h4>&copy 2017 Web Design Aidan Neil </h4>
+		</footer>
+		
+	</body>
+</html>
