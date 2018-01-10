@@ -186,7 +186,7 @@ p {
 
 #land {
   position: relative;
-  background: url(assets/img/background.jpg) no-repeat center center fixed;
+  background: url('../img/background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -281,7 +281,7 @@ p {
 }
 
 #media {
-	background: url(assets/img/backgroundtwo.jpg) no-repeat center center fixed;
+	background: url('../img/backgroundtwo.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
