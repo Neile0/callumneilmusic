@@ -1,0 +1,372 @@
+@font-face {
+  font-family:zag;
+  src: url("fonts/zagregular.otf") format('opentype'),
+       url("fonts/zagregular.ttf") format('truetype');
+}
+
+.bar {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Exo 2", sans-serif;
+}
+@media only screen and (max-width: 766px) {
+  .bar {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+  box-shadow: 0 2px;
+}
+
+.logo {
+  width: 300px;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+
+nav {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: right;
+	float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+nav ul a {
+	color: #888888;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 10px
+}
+
+nav ul a:hover {
+	color: #000;
+	
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #8f8f8f;
+  background: white;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Zag", sans-serif;
+  text-shadow: 100px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.content {
+	margin-top: -100px;
+	padding: 0;
+	background-color: rgba(0,0,0,0);
+}
+
+.contentsection {
+	padding: 100px 10% 100px ;
+	margin: 0;
+}
+
+#land {
+  position: relative;
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Exo 2", sans-serif;
+
+  
+}
+
+#land h1 {
+	font-size: 70px;
+	line-height: 1.3;
+	text-shadow: 2px 2px 0 black;
+}
+
+#land h1 span {
+	font-size: 20px;
+	color: #8f8f8f;
+	border-bottom: 2px solid #8f8f8f;
+	padding-bottom: 12px;
+	line-height: 3;
+	text-shadow: none;
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #8f8f8f;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+}
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #8f8f8f;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+#about {
+	
+	
+}
+
+#media {
+	background: url(backgroundtwo.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	height: 500px;
+}
+
+#contact {
+	height: auto;
+	width: 100%;
+	position: bottom center;
+}
+
+
+#contact .row {
+	text-align: center;
+}
+
+#contact label {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#contact #formblock {
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 7%;
+}
+
+#contact #name {
+	order: 1;
+	width: 50%;
+	margin: 0;
+	padding: 5px;
+	float: left;
+}
+
+#contact #name input {
+	width: 100%;
+}
+
+#contact #email {
+	order: 2;
+	width: 50%;
+	margin: 0;
+	padding: 5px;
+}
+
+#contact #email input {
+	width: 100%;
+}
+
+#contact #message {
+	width: 100%;
+	padding: 5px;
+}
+
+#contact #message textarea {
+	height: 50vh;
+	font-size: 32px;
+}
+
+#contact #submit {
+	height: auto;
+}
+
+#contact #submit input {
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	color: rgba(0, 0, 0, 0.5);
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+}
+
+#contact #submit input:hover {
+	color: black;
+}
+
+footer h4 {
+	font-size: 16px;
+	display: inline-block;
+	margin: 0 10px;
+	text-align: center;
+}
