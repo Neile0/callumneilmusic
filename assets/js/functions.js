@@ -1,45 +1,54 @@
-// Sticky Header
-$(window).scroll(function() {
+$( document ).ready(function() {
 
-    if ($(window).scrollTop() > 100) {
-        $('.bar').addClass('sticky');
-    } else {
-        $('.bar').removeClass('sticky');
-    }
-});
+	// Sticky Header
+	$(window).scroll(function() {
 
-// Mobile Navigation
-$('.mobile-toggle').click(function() {
-    if ($('.bar').hasClass('open-nav')) {
-        $('.bar').removeClass('open-nav');
-    } else {
-        $('.bar').addClass('open-nav');
-    }
-});
+		if ($(window).scrollTop() > 100) {
+			$('.bar').addClass('sticky');
+		} else {
+			$('.bar').removeClass('sticky');
+		}
+	});
 
-$('.bar li a').click(function() {
-    if ($('.bar').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.bar').removeClass('open-nav');
-    }
-});
+	// Mobile Navigation
+	//$('.mobile-toggle').click(function() {
+	//	if ($('.bar').hasClass('open-nav')) {
+	//		$('.bar').removeClass('open-nav');
+	//	} else {
+	//		$('.bar').addClass('open-nav');
+	//	}
+	//});
 
-// navigation scroll
-$('nav a').click(function(event) {
-    var id = $(this).attr("href");
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate({
-        scrollTop: target
-    }, 500);
-    event.preventDefault();
-});
+	$('.bar li a').click(function() {
+		if ($('.bar').hasClass('open-nav')) {
+			$('.navigation').removeClass('open-nav');
+			$('.bar').removeClass('open-nav');
+		}
+	});
 
-  //Contact botton smooth scroll
-  $('.scroll').click(function(e){
+	// navigation scroll
+	$('nav a').click(function(event) {
+	var id = $(this).attr("href");
+	var offset = 70;
+	var target = $(id).offset().top - offset;
+	$('html, body').animate({
+		scrollTop: target
+	}, 500);
+	event.preventDefault();
+	});
+
+	//Contact botton smooth scroll
+	$('.scroll').click(function(e){
+	var linkhref = $(this).attr('href');
+	$('html, body').animate({ scrollTop: scrollTop }, 600);
+	e.preventDefault();
+	});
+	
+	//Logo scroll to top
+	$('.logo').click(function(e){
     var linkhref = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(linkhref).offset().top
-    }, 2500);
+    $('html, body').animate({ scrollTop: 0 }, 600);
     e.preventDefault();
   });
+
+ });
