@@ -10,7 +10,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="keywords" content="Callum, Neil, Music, Musician, Trumpet, Arranger, Composer, Scotland">
 		<meta name="description" content="Callum Neil. Scottish musician, arranger and composer. View his official website here.">
-		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
@@ -35,7 +34,7 @@
 
 		<div id="land">
 			<h1><span>Musician Arranger Composer</span><br>Callum Neil</h1>
-			<div class="mouse">
+			<div class="arrow">
 				<span></span>
 			</div>
 		</div>
@@ -43,6 +42,7 @@
 		<div class="content">
 			<div id="about" class="contentsection">
 				<h1>About</h1>
+				<img src="assets/img/headshot.jpg" alt="image of Callum"/>
 				<p>Callum Neil (b.1998) is a commercial trumpet player, arranger and composer. At a young age, Callum's love for music was birthed with inspiration from Miles Davis, Stevie Wonder, Snarky Puppy and more. 
 
 Whilst Callum was at secondary school, he played with community bands such as the Byres Road Big Band and Zig Zag Big Band, and went on to perform and record with the National Youth Jazz Orchestra of Scotland w/ Iain Ballamy. 
@@ -52,7 +52,7 @@ At 17 Callum began studying at the Royal Conservatoire of Scotland, studying BMu
 Callum has performed at various events and stages such as the EFG London Jazz Festival and performances for the 2014 Glasgow Commonwealth Games. 
 
 As an educator Callum has been a tutor on the Scottish Chamber Orchestra’s “VIBE” project with Paul Griffiths, Callum has participated in workshopping with Drake Music Scotland —a creative charity for musicians with disabilities and additional support needs— including  workshop led by Snarky Puppy’s Michael League.</p>
-			<img src="assets/img/headshot.jpg" alt="image of Callum" />
+				
 			</div>
 		
 			<div id="media" class="contentsection">
@@ -64,28 +64,36 @@ As an educator Callum has been a tutor on the Scottish Chamber Orchestra’s “
 				<h1>Contact</h1>
 				<div id="formblock">
 				<form action="https://formspree.io/callum@callumneilmusic.com" method="POST">
-				<div id="name" class="col-md-3 col-sm-12">
+				<div class="row">
+				<div id="left" class="column"> 
+				<div id="name" >
 				<label for="name">Name</label>
-				<input type="text" id="name" name="Name:">
+				<input type="text" name="Name:" id="name" required="required" class="form" />
 				</div>
-				<div id="email" class="col-md-3 col-sm-12">
+				<div id="email" >
 				<label for="email">Email Address</label>
-				<input type="text" id="email" name="Email:">
+				<input type="email" name="Email:" id="mail" required="required" class="form" />
 				</div>
+				</div>
+				<div id="right" class="column"> 
 				<div id="message">
-				<label>Message</label>
-				<textarea id="message" name="Message:"></textarea>
+				<label>Message</label >
+				<textarea name="Message:" id="message" class="form textarea"></textarea>
 				</div>
-				<div id="submit">
+				</div>
+				</div>
+				<div id="submit" class="row">
 				<input type="submit" value="submit">
 				</div>
 				</form>
+				</div>
+				</div>
 				</div>
 			</div>
 		</div>
 
 		<footer>
-			<h4>&copy; 2017 Callum Neil. All Rights Reserved</h4>
+			<h4>&copy 2017 Callum Neil All Rights Reserved</h4>
 			<h4>&copy 2017 Web Design Aidan Neil </h4>
 		</footer>
 		
