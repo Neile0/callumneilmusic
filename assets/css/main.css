@@ -303,6 +303,9 @@ p {
 		float: none;
 		margin: 0 auto;
 }
+	#about p {
+		font-size: 12px;
+	}
 }
 
 #media {
