@@ -1,4 +1,3 @@
-$( document ).ready(function() {
 
 	// Sticky Header
 	$(window).scroll(function() {
@@ -9,6 +8,7 @@ $( document ).ready(function() {
 			$('.bar').removeClass('sticky');
 		}
 	});
+$( document ).ready(function() {
 
 	// Mobile Navigation
 	//$('.mobile-toggle').click(function() {
@@ -52,3 +52,29 @@ $( document ).ready(function() {
   });
 
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
