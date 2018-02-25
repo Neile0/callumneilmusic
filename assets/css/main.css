@@ -384,6 +384,7 @@ p {
 
 #contact #message {	
 	padding-left: 10px;
+	height: 248px;
 }
 
 #contact #message textarea {
