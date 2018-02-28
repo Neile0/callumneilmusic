@@ -319,6 +319,7 @@ p {
 @media only screen and (max-width: 766px) {
 	#media iframe {
 		height: 100px;
+	}
 }
 	
 #contact {
