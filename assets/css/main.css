@@ -314,9 +314,13 @@ p {
 	-moz-background-size: cover;
 	background-size: cover;
 	color: #fff;
-	height: 500px;
+	min-height: 510px;
 }
-
+@media only screen and (max-width: 766px) {
+	#media iframe {
+		height: 100px;
+}
+	
 #contact {
 	height: auto;
 	width: 100%;
