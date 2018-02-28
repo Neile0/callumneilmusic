@@ -33,6 +33,7 @@
 .open-nav {
 	max-height: 400px;
 }
+
 .open-nav .mobile-toggle {
 	transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
@@ -227,11 +228,11 @@ p {
 }
 
 @media only screen and (max-width: 766px) {
-#land h1 {
+	#land h1 {
 	font-size: 60px;
 	padding-top: 30px;
 	line-height: 2;
-}
+	}
 }
 
 .arrow {
@@ -302,7 +303,7 @@ p {
 	#about img {
 		float: none;
 		margin: 0 auto;
-}
+	}
 	#about p {
 		font-size: 12px;
 	}
@@ -316,6 +317,7 @@ p {
 	color: #fff;
 	min-height: 510px;
 }
+
 @media only screen and (max-width: 766px) {
 	#media iframe {
 		height: 100px;
@@ -453,6 +455,9 @@ p {
 }
 }
 
+footer{
+	padding-top: 10vh
+}
 footer h4 {
 	font-size: 14px;
 	display: inline-block;
