@@ -29,8 +29,7 @@ $( document ).ready(function() {
 	// navigation scroll
 	$('nav a').click(function(event) {
 	var id = $(this).attr("href");
-	var offset = 70;
-	var target = $(id).offset().top - offset;
+	var target = $(id).offset().top;
 	$('html, body').animate({
 		scrollTop: target
 	}, 500);
