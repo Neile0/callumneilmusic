@@ -1,0 +1,46 @@
+@font-face {
+	font-family:Zag;
+	scr: url("../fonts/zagregular.eot"); /*Internet Explorer*/
+	src: url("../fonts/zagregular.eot?#iefix") format('embedded-opentype'),
+		url("../fonts/zagregular.otf") format('opentype'),
+		url("../fonts/zagregular.ttf") format('truetype'),
+		url("../fonts/zagregular.woff") format('woff');
+}
+
+
+body{
+  background: #cdcbd1;
+}
+
+
+.main{
+  height: 70vh;
+  width: 50vw;
+  margin: 0 auto;
+  box-shadow: 5px 10px;
+  text-align: center;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+}
+
+h1 {
+	font-size: 52px;
+	line-height: 1.8;
+	text-transform: uppercase;
+	font-family: "Zag", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.text{
+  margin-top: 10%;
+}
+
+img{
+margin-top: 5%;
+
+}
