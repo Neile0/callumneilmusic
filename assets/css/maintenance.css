@@ -42,7 +42,8 @@ h2 {
 
 img{
 margin-top: 5%;
-  max-width: 20vw;
+  width: 20vw;
+  min-width: 120px;
 
 }
 
@@ -59,6 +60,6 @@ margin-top: 5%;
     top: 50%;
     left: 50%;
   }
-
+  
 
 }
