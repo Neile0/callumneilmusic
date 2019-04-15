@@ -214,7 +214,8 @@ font-family: 'Cardo', serif;
 }
 
 .merch .container{
-	width: 788px;
+	max-width: 788px;
+	width: 100%;
 }
 
 
