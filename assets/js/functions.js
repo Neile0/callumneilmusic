@@ -1,38 +1,8 @@
-
-// Sticky Header
-$(window).scroll(function() {
-	if ($(window).scrollTop() > 100) {
-		$('.bar').addClass('sticky');
-	} else {
-		$('.bar').removeClass('sticky');
-	}
-	});
-
-
 $( document ).ready(function() {
-
-	// Mobile Navigation
-	//$('.mobile-toggle').click(function() {
-	//	if ($('.bar').hasClass('open-nav')) {
-	//		$('.bar').removeClass('open-nav');
-	//	} else {
-	//		$('.bar').addClass('open-nav');
-	//	}
-	//});
-
-	$(window).scroll(function() {
-	  $("#land h1").css("opacity", 1 - $(window).scrollTop() / 200);
-	});
-
-	$('.bar li a').click(function() {
-	if ($('.bar').hasClass('open-nav')) {
-		$('.navigation').removeClass('open-nav');
-		$('.bar').removeClass('open-nav');
-	}
-	});
+	alert("Click");
 
 	// navigation scroll
-	$('nav a').click(function(event) {
+	$('.scroll').click(function(event) {
 	var id = $(this).attr("href");
 	//var offset = 70;
 	var target = $(id).offset().top //- offset;
@@ -42,12 +12,7 @@ $( document ).ready(function() {
 	event.preventDefault();
 	});
 
-	//Contact botton smooth scroll
-	$('.scroll').click(function(e){
-	var linkhref = $(this).attr('href');
-	$('html, body').animate({ scrollTop: scrollTop }, 600);
-	e.preventDefault();
-	});
+
 
 	//Logo scroll to top
 	$('.logo').click(function(e){
