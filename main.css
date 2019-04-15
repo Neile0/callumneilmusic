@@ -1,0 +1,525 @@
+/* @font-face {
+	font-family:Zag;
+	scr: url("../fonts/zagregular.eot"); /*Internet Explorer*/
+	/* src: url("../fonts/zagregular.eot?#iefix") format('embedded-opentype'),
+	url("../fonts/zagregular.otf") format('opentype'),
+	url("../fonts/zagregular.ttf") format('truetype'),
+	url("../fonts/zagregular.woff") format('woff');
+} */
+html{
+	overflow-x: hidden;
+}
+body{
+	margin: 0;
+}
+* {
+  box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+}
+
+h1{
+	font-family: 'Cardo', serif;
+}
+
+.container{
+width: 70vw;
+margin: 0 auto;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	padding: 10px 30px;
+	line-height: 80px;
+	background-color: white;
+	z-index: 1;
+	border-bottom: 1px solid grey;
+font-family: 'Cardo', serif;
+}
+.navbar-logo{
+	font-size: 48px;
+	height: 100%;
+	font-style: oblique;
+		font-family: 'Cardo', serif;
+}
+.navbar-right a{
+padding: 0 20px;
+font-size: 18px;
+	font-family: 'Cardo', serif;
+}
+.navbar-right{
+	float: right;
+}
+
+.land{
+	padding: 120px 60px 60px 40px;
+}
+.land .container-hero{
+	width: 1000px;
+	filter: none;
+-webkit-filter: none;
+	margin: 0 auto;
+ position: relative;
+ height: 560px;
+ margin-bottom: 60px;
+
+}
+.heroimg{
+	width: 700px;
+	height: 500px;
+	background-image: url("../img/hero.jpg");
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	float: right;
+	box-shadow: 10px 10px #cfcfcf;
+}
+.herotext{
+	color: white;
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.herotext h1{
+	width: 370px;
+	text-align: center;
+	background-color: black;
+	font-size: 48px;
+	font-weight: lighter;
+	margin: 0;
+	font-style: italic;
+	text-transform: uppercase;
+	font-family: 'Cardo', serif;
+	border: 2px solid grey;
+}
+.herotext h2{
+	text-align: center;
+	background-color: black;
+	font-weight: lighter;
+	font-size: 18px;
+	width:270px;
+	margin: 0 auto;
+	margin-top: -10px;
+	border-bottom: 2px  solid grey;
+
+
+}
+#about{
+	text-align: justify;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#about-text {
+	width: 300px;
+	float: left;
+	display: inline-block;
+}
+#gear{
+	width: 300px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	border: 1px solid black;
+	padding: 0 20px;
+	float: right;
+	display: inline-block;
+
+}
+#gear h2{
+	font-family: 'Cardo', serif;
+		font-style: italic;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.media{
+padding: 60px;
+ background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/background.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+#galleryblock{
+  background-color: #fff;
+  height: 570px;
+	max-width: 1000px;
+  border: solid 1px grey;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+.galleryitem{
+  height: 190px;
+  border: 1px grey solid;
+	background-size: cover;
+	background-position: center;
+}
+.gallery-item-one{
+  width: 50%;
+}
+.gallery-item-two{
+  width: 30%;
+}
+.gallerylink{
+  width: 40%;
+  background-color: #afafaf;
+}
+.gallery-item-three{
+  width: 25%;
+}
+
+#galleryblock a{
+  text-align: center;
+  display: block;
+  margin: 55px auto;
+  height: 80px;
+  padding: 10px;
+  color: #fff;
+  border: solid #fff 3px;
+  width: 340px;
+	font-size: 8px;
+}
+
+#galleryblock h1{
+margin: 0;
+line-height: 60px;
+font-family: 'Cardo', serif;
+}
+
+
+
+
+
+.merch{
+	padding: 60px;
+
+}
+.merch h1{
+	text-align: center;
+		font-style: italic;
+}
+
+.merch .container{
+	width: 788px;
+}
+
+
+
+.merchitem{
+	width:220px;
+	height:220px;
+	margin: 30px 20px;
+	display: inline-block;
+}
+
+.merchimage:hover{
+	border-radius: 10%;
+	transition: 0.5s;
+}
+.merchimage{
+	transition: 0.5s;
+	width:100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+.merchimage img{
+	margin: 0 auto;
+}
+
+
+.merchtext{
+	padding: 10px;
+	text-align: center;
+}
+.merchtext span{
+	color: grey;
+}
+
+
+.contact{
+padding: 60px;
+padding-bottom: 120px;
+}
+
+.contact .container{
+	max-width: 905px;
+}
+.contact h1{
+	text-align: center;
+		font-style: italic;
+}
+
+.contact form{
+	width: 49%;
+	max-width: 450px;
+	height: 700px;
+	display: inline-block;
+
+
+}
+input{
+	margin-bottom: 20px;
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding: 2px;
+	font-size: 28px;
+	font-weight: lighter;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+::placeholder {
+color: rgba(0,0,0,0.1);
+text-transform: uppercase;
+}
+textarea{
+	display: block;
+	width: 100%;
+	height: 490px;
+		padding: 2px;
+		margin-bottom: 20px;
+			font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16px;
+		resize: none;
+
+}
+.contactimage{
+	height: 700px;
+	width: 49%;
+	max-width: 450px;
+	background-image: url('../img/8b35de1517ee7bf8bc17e4594e7fc6c8.jpg');
+	background-size: cover;
+	background-position: center;
+	float: right;
+
+	border: solid grey 1px;
+}
+#frmSubmit{
+	width: 75%;
+	border-radius: 10px;
+	color: grey;
+	margin: 0 auto;
+}
+
+
+
+footer{
+	background-color: #000;
+	border-top: solid 2px grey;
+	padding: 1% 10%;
+	max-height: 350px;
+
+
+
+}
+
+
+#footleft{
+	border-right: solid #666666 1px;
+	width: 40%;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+#footleft h3{
+	font-size: 42px;
+	font-weight: lighter;
+	font-style: italic;
+	text-transform: uppercase;
+	font-family: 'Cardo', serif;
+}
+
+#footright{
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	margin: 10px 25px;
+	font-family: sans-serif;
+}
+
+
+footer h3{
+	color: #f2f2f2;
+	text-transform: uppercase;
+	text-transform: full-width;
+	font-size: 50px;
+}
+
+footer h4{
+	color: #d9d9d9;
+	padding: 0;
+	margin: 0;
+}
+
+footer h5{
+	color: #d9d9d9;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@media only screen and (max-width: 900px) {
+
+
+		#footleft{
+			display: block;
+			width: 75vw;
+			border-right: none;
+			border-bottom:  solid #666666 1px;
+		}
+		#footright{
+			margin: 15px 0;
+		}
+		#footeleft h3 {
+			font-size: 13px;
+		}
+		footer h5{
+			font-size: 10px;
+		}
+
+
+	}
+
+	@media only screen and (max-width: 550px) {
+		.navbar-logo{
+			font-size: 32px;
+		}
+		.navbar-right a{
+		padding: 0 10px;
+		font-size: 12px;
+		}
+		.land{
+			margin-top: 140px;
+			padding: 0;
+		}
+
+		.herotext h1{
+			width: 270px;
+			font-size: 32px;
+		}
+		.herotext h2{
+			font-size: 12px;
+			width:160px;
+}
+.land .container-hero{
+	width: 340px;
+	height: 200px;
+	margin: 0 auto;
+ margin-bottom: 40px;
+}
+.heroimg{
+	width: 300px;
+	height: 330px;
+	margin: 0;
+	box-shadow: 10px 10px #cfcfcf;
+}
+.herotext{
+	margin-top: 150px;
+}
+.about{
+	width: 90vw;
+	margin: 0 auto;
+	float: none;
+}
+#gear{
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	margin-top: 50px;
+	float: none;
+}
+#galleryblock{
+  width: 70vw;
+	height: 120px;
+}
+.gallery-item-one{
+	display: none;
+}
+.gallery-item-two{
+	display: none;
+}
+.gallerylink{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+#galleryblock a{
+margin: 20px auto;
+
+}
+
+.gallery-item-three{
+display: none;
+}
+
+.merch{
+		width: 90vw;
+		padding: 0;
+		margin: 0 auto;
+}
+.merch .container{
+	width: 100%;
+}
+
+
+.merchitem{
+	width:180px;
+	height:180px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	display: block;
+
+}
+
+.contactimage{
+	display: none;
+}
+
+.contact form{
+	width: 100%;
+}
+
+}
+
+
+	@media only screen and (max-width: 360px) {
+		.navbar-right a {
+			display: none;
+		}
+
+
+/*  */
