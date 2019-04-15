@@ -187,10 +187,10 @@ padding: 60px;
   display: block;
   margin: 55px auto;
   height: 80px;
-  padding: 10px;
+  padding: 2px;
   color: #fff;
   border: solid #fff 3px;
-  width: 340px;
+  width: 220px;
 	font-size: 8px;
 }
 
@@ -479,6 +479,13 @@ footer h5{
 }
 #galleryblock a{
 margin: 20px auto;
+padding: 5px;
+width: 60vw;
+
+}
+#galleryblock h1{
+padding: 5px;
+width: 60vw;
 
 }
 
